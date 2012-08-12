@@ -27,12 +27,14 @@ public $twitterDb = array(
 
 3: Create your model: APP/Model/Twitter.php
 
-    <?php
-    class Twitter extends AppModel {
+```php
+<?php
+class Twitter extends AppModel {
 
-        public $useDbConfig = 'twitterDb';
+    public $useDbConfig = 'twitterDb';
 
-    }
+}
+```
 
 ##Usage
 
@@ -41,22 +43,28 @@ You can now use SimpleTwitter with your application. Below is an example of Usag
 ###Controller example:
 Note: $uses pulls in our twitter datasource. This is required.
 
-    public $uses = array('Twitter');
+```php
+public $uses = array('Twitter');
+```
 
 This is a simple find, using the default's and your custom configurations in the APP/Config/database.php file.
-    public function index() {
-        $this->set('twitter', $this->Twitter->find('all'));
-    }
-
+```php
+public function index() {
+    $this->set('twitter', $this->Twitter->find('all'));
+}
+```
 You can also add conditions, which modify the configuration. Example: 
 
-    $this->Twitter->find('all', array('conditions' => array('count' => 8, 'screen_name' => 'alairock')));
-
+```php
+$this->Twitter->find('all', array('conditions' => array('count' => 8, 'screen_name' => 'alairock')));
+```
 ###View example:
 The above controller passes the tweets with $this->set, the below view shows usage.
 
-    <h1>Twitter Results</h1>
-    <?php pr($twitter); ?>
+```php
+<h1>Twitter Results</h1>
+<?php pr($twitter); ?>
+```
 
 #License
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
