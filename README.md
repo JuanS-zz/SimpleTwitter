@@ -3,7 +3,10 @@
 ##Description
 This is a simple datasource for CakePHP to allow easy quick implementation of twitter.
 
-This is a read only datasource. You can only read tweets from a specified user. 
+This is a read-only datasource. You can only read tweets from a specified user. 
+
+### Need more than read-only? OAuth, CRUD/BREAD*? See [CompleteTwitter](http://github.com/alairock/CompleteTwitter).
+*Browse, Read, Edit, Add, Delete 
 
 ##Installation
 
