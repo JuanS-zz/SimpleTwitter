@@ -40,7 +40,7 @@ class Twitter extends AppModel {
 You can now use SimpleTwitter with your application. Below is an example of Usage in a new Controller/View
 
 ###Controller example:
-Note: $uses pulls in our twitter datasource. This is required.
+Note: $uses pulls in our twitter model, which includes our datasource. This is required.
 
 ```php
 public $uses = array('Twitter');
