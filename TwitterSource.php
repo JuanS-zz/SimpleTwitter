@@ -2,6 +2,8 @@
 /**
  *SimpleTwitter - A simple twitter datasource for cakephp
  * @author Skyler Lewis (aka alairock) 2012
+ * @link http://sixteenink.com
+ * @link http://github.com/alairock
  **/
 
 App::uses('HttpSocket', 'Network/Http');
