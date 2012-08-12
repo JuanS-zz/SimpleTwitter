@@ -1,4 +1,8 @@
 <?php
+/**
+ *SimpleTwitter - A simple twitter datasource for cakephp
+ * @author Skyler Lewis (aka alairock) 2012
+ **/
 
 App::uses('HttpSocket', 'Network/Http');
 class TwitterSource extends DataSource {
