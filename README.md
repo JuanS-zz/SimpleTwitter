@@ -13,12 +13,11 @@ This is a read only datasource. You can only read tweets from a specified user.
 
 ```php
 public $twitterDb = array(
-    'datasource' => 'TwitterSource',
-    'sourceUrl' => 'http://api.twitter.com/1/statuses/user_timeline.json',
-    'screen_name' => 'alairock',
+    'datasource' => 'TwitterSource', //Do not modify
+    'sourceUrl' => 'http://api.twitter.com/1/statuses/user_timeline.json', //Do no modify
     
     /* Optional settings below */
-
+    'screen_name' => 'alairock',
     'include_rts' => true, //recommended true
     'abridged' => true, // Results only tweet and timestamp, recommended true
     'count' => '10', // default twitter limit is 20, 
