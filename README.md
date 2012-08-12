@@ -10,7 +10,7 @@ This is a read only datasource. You can only read tweets from a specified user.
 1: Download and copy the TwitterSource.php file into your APP/Model/Datasource/ folder.
 
 2: Add the following lines to your APP/Config/database.php file, modify to meet your requirements.
-
+```php
     public $twitterDb = array(
         'datasource' => 'TwitterSource',
         'sourceUrl' => 'http://api.twitter.com/1/statuses/user_timeline.json',
@@ -22,7 +22,7 @@ This is a read only datasource. You can only read tweets from a specified user.
         'abridged' => true, // Results only tweet and timestamp, recommended true
         'count' => '10', // default twitter limit is 20, 
     );
-
+```
 3: Create your model: APP/Model/Twitter.php
 
     <?php
