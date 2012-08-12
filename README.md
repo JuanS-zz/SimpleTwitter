@@ -68,9 +68,9 @@ The above controller passes the tweets with $this->set, the below view shows usa
 ##Options 
 These options can be enabled in the APP/Config/database.php or during your $this->Twitter->find method
 
-*screen_name*: REQUIRED, this will be the twitter account your datasource will pull. 
-*include_rts: this comes from twitter. True by default. Show retweets = true, Do not show = false
-*abridged: this is my function I wrote. It will parse through the returned object and give you just the tweet and timestamp
+* screen_name*: REQUIRED, this will be the twitter account your datasource will pull. 
+* include_rts: this comes from twitter. True by default. Show retweets = true, Do not show = false
+* abridged: this is my function I wrote. It will parse through the returned object and give you just the tweet and timestamp
 * count: twitter returns 20 by default. You can return less or more with this option.
 
 
